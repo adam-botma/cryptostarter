@@ -29,10 +29,11 @@ const useStyles = makeStyles({
 
 
 
-const CampaignCard = ({ campaignTitle }) => {
+const CampaignCard = ({ campaignTitle, index }) => {
   const classes = useStyles();
 
   const [campaignInfo , setCampaignInfo] = useState(null);
+  const showLoad = index === 0;
 
   useEffect(async ()=> {
     const campaign = Campaign(campaignTitle);
@@ -77,7 +78,7 @@ const CampaignCard = ({ campaignTitle }) => {
      </CardActions>
    </Card>
  ) : (
-   <CircularProgress />
+   showLoad ? <CircularProgress /> : null
  );
 };
 

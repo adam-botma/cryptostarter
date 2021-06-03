@@ -61,7 +61,7 @@ const Homepage = ({ campaigns, campaignData }) => {
 
           <div className={classes.campaignList}>
             {campaigns.map((address, index) => (
-              <CampaignCard key={index} campaignTitle={address} mt={2} />
+              <CampaignCard key={index} index={index} campaignTitle={address} mt={2} />
             ))}
           </div>
         </div>
