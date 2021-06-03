@@ -1,0 +1,18 @@
+
+
+.homepageContentContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ /* make flex-direction: column when width is under a certain TBD ammount */
+
+}
+
+.campaignList {
+
+}
+
+.sidebar{
+
+
+}
