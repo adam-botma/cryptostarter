@@ -45,7 +45,7 @@ const theme = createMuiTheme({
 const Layout = (props) => {
 
 return (
-  <ThemeProvider theme={theme}>
+  // <ThemeProvider theme={theme}>
     <div className={styles.homepageContainer}>
       <style jsx global>{`
         * > body {
@@ -56,8 +56,8 @@ return (
       <Header />
       {props.children}
     </div>
-    <CssBaseline />
-  </ThemeProvider>
+    // <CssBaseline />
+  // </ThemeProvider>
 );
 }
 
