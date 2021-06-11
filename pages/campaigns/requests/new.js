@@ -32,6 +32,14 @@ const useStyles = makeStyles((theme) => ({
    '& MuiButtonBase-root': {
      width: '90%'
    }
+ },
+
+ container: {
+   width: '100%',
+   display: 'flex',
+   flexDirection: 'column',
+   alignItems: 'center',
+   justifyContent: 'center'
  }
 }));
 
@@ -61,7 +69,8 @@ const NewRequest = ({ address }) => {
 
 
   return (
-    <Layout>
+   <Layout >
+     <div className={classes.container}>
       <h3>Create a new Request</h3>
       <form className={classes.root} onSubmit={handleSubmit(onSubmit)}>
         <TextField
@@ -107,7 +116,8 @@ const NewRequest = ({ address }) => {
           </Alert>
         )}
       </form>
-    </Layout>
+      </div>
+   </Layout>
   );
 };
 

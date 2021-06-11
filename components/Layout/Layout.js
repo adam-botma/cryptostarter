@@ -47,12 +47,6 @@ const Layout = (props) => {
 return (
   // <ThemeProvider theme={theme}>
     <div className={styles.homepageContainer}>
-      <style jsx global>{`
-        * > body {
-          margin: 0;
-          box-sizing: border-box;
-        }
-      `}</style>
       <Header />
       {props.children}
     </div>
